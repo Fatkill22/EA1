@@ -1,0 +1,15 @@
+@startuml
+class Student {
+  - studentID: int
+  - name: String
+  - course: String
+  + enroll()
+}
+
+class Course {
+  - courseID: int
+  - courseName: String
+}
+
+Student --> Course : enrolls
+@enduml
